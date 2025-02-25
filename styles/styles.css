@@ -1,7 +1,7 @@
  /*
     seletor {
-    propriedade1: valor;
-    propriedade2: valor;
+        propriedade1: valor;
+        propriedade2: valor;
     }
 */
 
@@ -71,20 +71,14 @@
      /* Todos os elementos dentro da tag main serão organizados de forma flexível. */
  }
 
- article {
-     background: #01ff66;
+article {
+     background: #EFEFEF;
      margin: 1em;
      padding: 1em;
      border-radius: 20px;
      box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.1);
      transition: all .6s;
      /* Animação de 0.6 segundos */
- }
-
- article:hover {
-     background: #efefef;
-     transform: scale(1.05);
-     /* */
  }
 
  ul {
@@ -122,6 +116,20 @@
  }
 
  h6 {
-        font-size: 0.7em;
-        font-family: Arial, Helvetica, sans-serif;
+     font-size: 0.7em;
+     font-family: Arial, Helvetica, sans-serif;
+ }
+
+ .noticia{
+    font-size: 21px;
+    line-height: 1.6;
+    word-spacing: 2px;
+ }
+
+ .noticia p{
+    margin: 1em;
+ }
+
+.imagem-noticia {
+    width: 100%;
  }
