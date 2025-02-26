@@ -52,10 +52,6 @@
      /* 20px em todas as direções */
  }
 
- article {
-     background: red;
- }
-
  h2 {
      font-size: 0.9em;
      font-family: Arial, Helvetica, sans-serif;
@@ -68,17 +64,30 @@
 
  main {
      display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
      /* Todos os elementos dentro da tag main serão organizados de forma flexível. */
  }
 
-article {
+ article {
      background: #EFEFEF;
-     margin: 1em;
-     padding: 1em;
-     border-radius: 20px;
+     margin: 1vw;
+     padding: 1vw;
+     border-radius: 1vw;
      box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.1);
      transition: all .6s;
      /* Animação de 0.6 segundos */
+ }
+
+ .pagina-inicial article {
+     width: 46vw;
+     /* VW é a unidade de medida que calcula o tamanho da largura da tela do usuário */
+ }
+
+ .pagina-inicial .destaque {
+     width: 100vw;
+     background: #98E2E4;
+     /* VW é a unidade de medida que calcula o tamanho da largura da tela do usuário */
  }
 
  ul {
@@ -120,16 +129,42 @@ article {
      font-family: Arial, Helvetica, sans-serif;
  }
 
- .noticia{
-    font-size: 21px;
-    line-height: 1.6;
-    word-spacing: 2px;
+ .noticia {
+     font-size: 21px;
+     line-height: 1.6;
+     word-spacing: 2px;
  }
 
- .noticia p{
-    margin: 1em;
+ .noticia p {
+     margin: 1em;
  }
 
-.imagem-noticia {
-    width: 100%;
+ .imagem-noticia {
+     width: 100%;
+ }
+
+ .btn-exemplo {
+    background: #D507E3;
+    height: 10vh;
+    width: 10vw;
+    border-radius: 10vw;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+    box-shadow: 3px 3px 3px #AAA;
+    z-index: 1000;
+ }
+
+ .btn-exemplo-superior {
+    background: #336699;
+    height: 10vh;
+    width: 10vw;
+    border-radius: 10vw;
+    position: fixed;
+    top: 0;
+    left: 40px;
+    cursor: pointer;
+    z-index: 900;
+    box-shadow: 3px 3px 3px #AAA;
  }
